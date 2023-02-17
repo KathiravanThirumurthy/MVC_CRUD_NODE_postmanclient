@@ -6,4 +6,5 @@ router.route('/api/users').get(userCtrl.getAllUsers);
 router.route('/api/users/:userId').get(userCtrl.getUserById);
 router.route('/api/users/:userId').put(userCtrl.updateUser);
 router.route('/api/users/:userId').delete(userCtrl.deleteUser);
+router.route('/api/users/removeall').delete(userCtrl.deleteAllUser);
 module.exports=router;
